@@ -1,0 +1,50 @@
+@mixin ios-toggle($height: 26px, $width: 46px) {
+  label {
+    appearance: none;
+    transition: all .3s ease;
+    box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+    border-radius: 1rem;
+    background-color: #fff;
+    padding: 1px;
+    display: inline-block;
+    width: $width;
+    height: $height;
+    position: relative;
+    cursor: pointer;
+    margin: 0px;
+    vertical-align: bottom;
+    outline: none;
+    border: none;//Fixes weird issue on iOS Browser.
+  }
+
+  input {
+    position: absolute;
+    left: -999999px;
+  }
+
+  input:checked + label {
+    box-shadow: inset 0px 0px 0px 20px $c-main-blue;
+  }
+
+  label:after {
+    transition: all .3s ease-in-out;
+    box-shadow: inset 0 1px 0 #e6e6e6, 0px 2px 2px 1px rgba(0,0,0,.2) ;
+    border-radius: 1rem;
+    left: 0;
+    content: '';
+    position: absolute;
+    width: $height - 2px;
+    height: $height - 2px;
+    cursor: pointer;
+    background-color: #fff;
+  }
+
+  input:checked + label:after {
+    transition: all .3s ease-in-out;
+    left: $width - $height;
+  }
+}
+
+.switch {
+  @include ios-toggle;
+}

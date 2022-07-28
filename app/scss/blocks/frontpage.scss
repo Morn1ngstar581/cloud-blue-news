@@ -1,0 +1,51 @@
+.popup-form{
+
+  display: none;
+  .close{
+    display: block;
+    position: relative;
+    left: 73%;
+    top: 26px;
+    cursor: pointer;
+  }
+  &__body{
+    background: $c-main-blue;
+    width: 100%;
+    height: 204px;
+    z-index: 80;
+    position: relative;
+  }
+  .form-search{
+    display: flex;
+
+    justify-content: center;
+    top: 50%;
+    &__control{
+      position: absolute;
+      top: 50%;
+      max-width: 933px;
+      height: 69px;
+      width: 100%;
+      text-align: center;
+      font-family: $lora;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 45px;
+      color: $c-dark-bg;
+      border-radius: 16px;
+      background: $c-white-bg;
+      outline: none;
+      border: none;
+    }
+  }
+}
+.form-active{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 33, 33, 0.6);
+  backdrop-filter: blur(10px);
+  display: block;
+  transition: all 3s ease-in-out;
+}

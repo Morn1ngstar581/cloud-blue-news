@@ -1,0 +1,110 @@
+.header {
+  &__top {
+    background: $c-main-blue;
+    padding: 18px 0;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+  }
+
+  .navbar {
+    &__menu {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-gap: 40px;
+      justify-items: center;
+      list-style-type: none;
+      font-family: $open-sans;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__item {
+      display: block;
+    }
+
+    &__link {
+      display: block;
+      text-decoration: none;
+      color: $c-white-bg;
+    }
+  }
+
+  .search {
+    display: flex;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+
+  &__middle {
+    padding: 17px 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__banner {
+    width: 933px;
+    height: 69px;
+  }
+
+  #brand {
+    width: 137px;
+    height: 40px;
+  }
+
+  &__wrapper {
+    background-color: $c-white-bg;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-family: $open-sans;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    color: $c-main-grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__currency {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__weather {
+    .weather {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+
+  &__social {
+    .networks {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-gap: 8px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+}

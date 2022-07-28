@@ -1,0 +1,72 @@
+.society {
+  padding: $section-gutters-y;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+
+    &__item {
+      width: 100%;
+    }
+
+    &__link {
+      text-decoration: none;
+      display: block;
+    }
+
+    &__link:after {
+      content: '';
+      position: absolute;
+      background: rgba(0, 0, 0, 0.4);
+      inset: 0;
+      border-radius: 16px;
+    }
+
+    &__big {
+      position: relative;
+    }
+
+    &__big-img {
+      width: 100%;
+      border-radius: 16px;
+      z-index: -2;
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 50px;
+      left: 20px;
+      color: $c-white-bg;
+      z-index: 3;
+    }
+
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    &__small {
+      position: relative;
+    }
+
+    &__small-img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+  }
+
+
+  .date {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: $c-white-bg;
+    z-index: 3;
+  }
+
+}

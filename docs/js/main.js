@@ -1,0 +1,1 @@
+(()=>{var e=document.querySelector(".search"),c=document.querySelector(".popup-form"),t=document.querySelector(".close");e.addEventListener("click",(function(e){e.preventDefault(),c.classList.add("form-active")})),t.addEventListener("click",(function(){c.classList.remove("form-active")}))})();
