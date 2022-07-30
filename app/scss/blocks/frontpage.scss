@@ -1,5 +1,5 @@
 .popup-form{
-
+  z-index: 99;
   display: none;
   .close{
     display: block;
@@ -36,7 +36,26 @@
       background: $c-white-bg;
       outline: none;
       border: none;
+
     }
+   input[type="search"]::-webkit-search-cancel-button{
+     display: none;
+    }
+  }
+  &__content{
+    position: fixed;
+    padding:36px 24px;
+    background-color: $c-white-bg;
+    max-width: 933px;
+    width: 100%;
+    top: 265px;
+    border-radius: 16px;
+    margin: 0 auto;
+    display: block;
+    left: 485px;
+    overflow-y: scroll;
+
+
   }
 }
 .form-active{
@@ -48,4 +67,7 @@
   backdrop-filter: blur(10px);
   display: block;
   transition: all 3s ease-in-out;
+}
+.banner-img{
+  width: 100%;
 }

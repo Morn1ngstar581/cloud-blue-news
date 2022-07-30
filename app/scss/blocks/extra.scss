@@ -1,0 +1,64 @@
+.extra{
+  padding: $section-gutters-y;
+
+  &__link{
+    position: relative;
+    display: block;
+    text-decoration: none;
+  }
+  .cat-name{
+    color: $c-white-bg;
+    position: absolute;
+    left: 505px;
+    bottom: 200px;
+    z-index: 3;
+    font-weight: 700;
+  }
+  &__title{
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    bottom: 150px;
+    color:$c-white-bg;
+    z-index: 3;
+    font-weight: 700;
+  }
+  &__link:after{
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,.4);
+    inset: 0;
+    border-radius: 16px;
+  }
+  &__img{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+  &__description{
+    position: absolute;
+    color:$c-white-bg;
+    font-family: $lora;
+    font-size: 24px;
+    left: 20%;
+    bottom: 100px;
+    z-index: 3;
+    text-align: left;
+    width: 800px;
+  }
+  .views{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 500px;
+    gap: 5px;
+    color:$c-white-bg;
+    font-family:$noto-sans;
+    font-weight: 500;
+    bottom: 35px;
+    z-index: 3;
+  }
+}
+.eye{
+  color:$c-white-bg;
+}

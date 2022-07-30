@@ -1,24 +1,42 @@
-.h2{
+.h2 {
   font-weight: 500;
   font-size: 30px;
   line-height: 45px;
   font-family: $lora;
 }
-.date{
+
+.date {
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   font-family: $noto-sans;
 }
-.latest__date-body{
+
+.cat-name {
+  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  font-family: $noto-sans;
+}
+
+.latest__date-body {
   font-size: 10px;
   line-height: 14px;
   font-weight: 400;
   font-family: $noto-sans;
 }
-.h3{
+
+.h4 {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   font-family: $lora;
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $lora;
+  font-weight: 500;
 }
