@@ -1,34 +1,40 @@
-.politic{
-  .grid{
+.politic {
+  .grid {
     display: grid;
     gap: 20px;
-    &__row:first-child{
+
+    &__row:first-child {
       display: grid;
       grid-template-columns: 0.5fr 2fr;
       gap: 20px;
     }
-    &__big{
+
+    &__big {
       display: block;
       position: relative;
       border-radius: 16px;
     }
-    &__link{
+
+    &__link {
       display: block;
       text-decoration: none;
-      color:$c-main-black;
+      color: $c-main-black;
     }
-    &__link:after{
+
+    &__link:after {
       content: '';
       position: absolute;
       background: rgba(0, 0, 0, 0.4);
       inset: 0;
       border-radius: 16px;
     }
-    &__big-img{
+
+    &__big-img {
       border-radius: 16px;
       width: 100%;
     }
-    .cat-name{
+
+    .cat-name {
       position: absolute;
       top: 40px;
       left: 20px;
@@ -36,7 +42,8 @@
       z-index: 3;
 
     }
-    &__title{
+
+    &__title {
       position: absolute;
       bottom: 100px;
       left: 20px;
@@ -44,7 +51,8 @@
       color: $c-white-bg;
       z-index: 3;
     }
-    .data{
+
+    .data {
       position: absolute;
       left: 20px;
       bottom: 40px;
@@ -52,6 +60,45 @@
       z-index: 3;
     }
 
+    .block-banner {
+      height: 100%;
+    }
+
+    &__row:last-child {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    &__small {
+      position: relative;
+      border-radius: 16px;
+      background-color: $c-white-bg;
+      padding: 30px;
+      height: 100%;
+
+    }
+
+    &__link-white {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .cat-name-white {
+      position: unset;
+      color: $c-main-black;
+    }
+
+    &__title-white {
+      color: $c-main-black;
+    }
+
+    .date-white {
+      position: unset;
+      color: $c-main-black;
+    }
   }
 
 }

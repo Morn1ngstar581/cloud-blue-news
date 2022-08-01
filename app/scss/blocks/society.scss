@@ -7,7 +7,6 @@
       display: inherit;
       grid-template-columns: 2fr 1fr;
       grid-column-gap: 20px;
-      align-items: center;
     }
     &__row:last-child{
       grid-template-columns: repeat(2, 1fr);
@@ -25,6 +24,7 @@
     &__link {
       text-decoration: none;
       display: block;
+      height: 100%;
     }
 
     &__link:after{
@@ -43,12 +43,15 @@
 
     &__big {
       position: relative;
+      height: 100%;
     }
 
     &__big-img {
       width: 100%;
       border-radius: 16px;
       z-index: -2;
+      object-fit: cover;
+      height: 100%;
     }
 
     &__title {
