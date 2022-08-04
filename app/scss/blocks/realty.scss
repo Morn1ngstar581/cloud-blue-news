@@ -15,7 +15,7 @@
       height: 100%;
       text-decoration: none;
       display: block;
-      color:$c-white-bg;
+      color:var(--text-color);
     }
     &__link:after{
       content: '';

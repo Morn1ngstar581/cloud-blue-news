@@ -25,6 +25,7 @@
       text-decoration: none;
       display: block;
       height: 100%;
+      color:var(--text-color);
     }
 
     &__link:after{
@@ -58,11 +59,10 @@
       position: absolute;
       bottom: 50px;
       left: 20px;
-      color: $c-white-bg;
       z-index: 3;
     }
     &__title-white{
-    color: $c-dark-bg;
+      color: var(--text);
     }
     &__small {
       position: relative;
@@ -73,7 +73,7 @@
       border-radius: 16px;
     }
     &__white{
-      background-color: $c-white-bg;
+      background-color: var(--block-bg);
       border-radius: 16px;
       padding: 30px
     }
@@ -84,36 +84,26 @@
     position: absolute;
     left: 20px;
     bottom: 20px;
-    color: $c-white-bg;
     z-index: 3;
     &-white{
       position: unset;
     }
   }
-  .views{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    z-index: 3;
-    gap: 5px;
-    color:$c-white-bg;
-    right: 20px;
-    bottom: 15px;
-  }
+
   .date-white{
     left: 20px;
     bottom: 20px;
-    color: $c-dark-bg;
+    color: var(--text-color);
   }
   .cat-name {
     position: absolute;
     left:20px;
     top: 20px;
-    color:$c-white-bg;
+    color:var(--text-color);
     z-index: 3;
     &-white{
       position: unset;
-      color:$c-dark-bg;
+      color: var(--text);
     }
   }
 }

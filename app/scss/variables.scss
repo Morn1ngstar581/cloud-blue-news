@@ -1,5 +1,21 @@
 //colors
-
+:root{
+  --main-bg:#F1F1F1;
+  --main-shuttle:#5f6778;
+  --header-text:#717171;
+  --dark-bg:#000000;
+  --grey-bg:#343434;
+  --main-black:#212121;
+  --text-color:#ffffff;
+  --text:#212121;
+  --block-bg:#ffffff
+}
+:root[data-theme='dark']{
+  --block-bg:#343434;
+  --main-bg:#000000 ;
+  --header-text: #ffffff;
+  --text:#ffffff;
+}
 $c-light-bg: #F1F1F1;
 $c-white-bg: #FFFFFF;
 $c-main-shuttle: #5f6778;

@@ -23,7 +23,7 @@
     }
     &__small-white{
       position: relative;
-      background-color:$c-white-bg;
+      background-color:var(--block-bg);
       border-radius: 16px;
       height: 100%;
       padding:60px 20px;
@@ -32,13 +32,13 @@
       text-decoration: none;
       display: block;
       height: 100%;
-      color:$c-white-bg;
+      color:var(--text-color);
     }
     &__link-white{
       text-decoration: none;
       display: block;
       height: 100%;
-      color:$c-main-black;
+      color:var(--text);
     }
     &__link:after{
       content: '';

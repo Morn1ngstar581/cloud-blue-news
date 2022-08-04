@@ -5,9 +5,9 @@
     position: relative;
     display: block;
     text-decoration: none;
+    color: var(--text-color);
   }
   .cat-name{
-    color: $c-white-bg;
     position: absolute;
     left: 505px;
     bottom: 200px;
@@ -19,7 +19,6 @@
     text-align: center;
     left: 40%;
     bottom: 150px;
-    color:$c-white-bg;
     z-index: 3;
     font-weight: 700;
   }
@@ -37,7 +36,6 @@
   }
   &__description{
     position: absolute;
-    color:$c-white-bg;
     font-family: $lora;
     font-size: 24px;
     left: 20%;
@@ -52,7 +50,7 @@
     align-items: center;
     left: 500px;
     gap: 5px;
-    color:$c-white-bg;
+    color:var(--white-bg);
     font-family:$noto-sans;
     font-weight: 500;
     bottom: 35px;
@@ -60,5 +58,5 @@
   }
 }
 .eye{
-  color:$c-white-bg;
+  color:var(--text-color);
 }

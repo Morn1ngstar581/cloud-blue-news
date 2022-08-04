@@ -27,7 +27,7 @@
     }
     &__link{
       text-decoration: none;
-      color:$c-white-bg;
+      color:var(--text-color);
       height: 100%;
       display: block;
     }
