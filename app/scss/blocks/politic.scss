@@ -20,6 +20,11 @@
       text-decoration: none;
       color: $c-main-black;
     }
+    &__link:hover{
+      img{
+        backdrop-filter: blur(20px);
+      }
+    }
 
     &__link:after {
       content: '';

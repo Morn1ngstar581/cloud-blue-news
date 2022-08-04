@@ -21,11 +21,11 @@ new Swiper('.swiper', {
   direction: 'horizontal',
   loop: false,
   spaceBetween: 20,
-  speed: 800,
+  speed: 1000,
   effect: 'fade',
   modules:[Autoplay, EffectFade],
   autoplay:{
-    delay: 2000,
+    delay: 5000,
     waitForTransition: true,
   },
 })
