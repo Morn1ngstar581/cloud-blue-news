@@ -21,6 +21,11 @@
       a{
         color:$c-white-bg;
         text-decoration: none;
+        transition: all .3s ease-in;
+      }
+      a:hover{
+        transition: all .3s ease;
+        text-decoration: underline;
       }
     }
     &__networks{
