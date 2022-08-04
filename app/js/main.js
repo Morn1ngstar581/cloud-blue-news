@@ -1,4 +1,7 @@
 //Open popup with search-form
+
+import {Autoplay, EffectFade, Swiper} from "swiper";
+
 const searchButton = document.querySelector(".search");
 
 const popupForm = document.querySelector('.popup-form');
@@ -13,3 +16,16 @@ searchButton.addEventListener('click', function (e) {
 closePopUp.addEventListener('click', () => {
   popupForm.classList.remove('form-active');
 });
+
+new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: false,
+  spaceBetween: 20,
+  speed: 800,
+  effect: 'fade',
+  modules:[Autoplay, EffectFade],
+  autoplay:{
+    delay: 2000,
+    waitForTransition: true,
+  },
+})

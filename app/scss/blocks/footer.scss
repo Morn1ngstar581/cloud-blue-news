@@ -1,0 +1,64 @@
+.footer{
+  background-color: #5f6778;
+  padding:24px 0;
+  .grid{
+    &__row{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    &__list{
+      list-style-type: none;
+    }
+    &__information{
+      display: grid;
+      grid-gap: 8px;
+      li{
+        font-family: $open-sans;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      a{
+        color:$c-white-bg;
+        text-decoration: none;
+      }
+    }
+    &__networks{
+      display: flex;
+      flex-direction: row;
+      gap: 11px;
+      li{
+        a{
+          text-decoration: none;
+        }
+      }
+    }
+    &__contacts{
+      display: grid;
+      text-align: right;
+      &__title{
+        color:$c-white-bg;
+      }
+      li{
+        margin-bottom: 8px;
+        font-family: $open-sans;
+        font-size: 14px;
+        line-height: 21px;
+        color:$c-white-bg;
+        a{
+          color: $c-white-bg;
+          text-decoration: none;
+        }
+      }
+      li:last-child{
+        margin-bottom: 0px;
+      }
+    }
+    &__copy{
+      font-family: $open-sans;
+      font-size: 14px;
+      line-height: 21px;
+      color:$c-white-bg;
+    }
+  }
+}
