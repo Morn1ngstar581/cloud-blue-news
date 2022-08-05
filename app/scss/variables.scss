@@ -9,6 +9,9 @@
   --text-color:#ffffff;
   --text:#212121;
   --block-bg:#ffffff;
+  --tags-color:#ffffff;
+
+
 }
 :root[data-theme='dark']{
   --block-bg:#343434;
@@ -16,6 +19,7 @@
   --header-text: #ffffff;
   --text:#ffffff;
   --main-shuttle:#343434;
+  --tags-color:#212121;
 }
 $c-light-bg: #F1F1F1;
 $c-white-bg: #FFFFFF;

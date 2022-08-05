@@ -79,7 +79,9 @@
     align-items: center;
     justify-content: space-between;
   }
-
+  .local{
+    color:var(--header-text);
+  }
   &__currency {
     list-style-type: none;
     display: flex;
@@ -88,7 +90,12 @@
     li {
       display: flex;
       align-items: center;
+      color:var(--header-text);
     }
+
+  }
+  .currency{
+    color:var(--header-text);
   }
 
   &__weather {
@@ -96,6 +103,7 @@
       display: flex;
       align-items: center;
       gap: 4px;
+      color:var(--header-text);
     }
   }
 
