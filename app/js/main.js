@@ -35,27 +35,24 @@ new Swiper('.swiper', {
 
 const htmlElement = document.documentElement;
 const themeToggle = document.getElementById('dat-checkbox');
+const storage = window.localStorage;
 
 themeToggle.addEventListener('change', function () {
-
-    theme()
-
+  theme();
 });
 
+function storageInit() {
+  themeToggle.checked = storage.getItem('theme') === 'dark' ? true:false;
+}
 
 function theme() {
-
   if (themeToggle.checked) {
     htmlElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark')
+    storage.setItem('theme', 'dark')
   } else {
     htmlElement.removeAttribute('data-theme');
-    localStorage.removeItem('theme');
-
-  }
-  if (localStorage.getItem('theme') !== null){
-    htmlElement.setAttribute('data-theme', 'dark')
+    storage.removeItem('theme');
   }
 }
+storageInit();
 theme();
-

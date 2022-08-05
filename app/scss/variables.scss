@@ -8,13 +8,14 @@
   --main-black:#212121;
   --text-color:#ffffff;
   --text:#212121;
-  --block-bg:#ffffff
+  --block-bg:#ffffff;
 }
 :root[data-theme='dark']{
   --block-bg:#343434;
   --main-bg:#000000 ;
   --header-text: #ffffff;
   --text:#ffffff;
+  --main-shuttle:#343434;
 }
 $c-light-bg: #F1F1F1;
 $c-white-bg: #FFFFFF;
@@ -33,4 +34,4 @@ $lora: 'Lora', Arial, Helvetica, sans-serif;
 
 $container-width: 1124px;
 $container-gutters: 20px;
-$section-gutters-y: 24px;
+$section-gutters-y: 24px 0;
