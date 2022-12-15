@@ -1,10 +1,15 @@
 //пишем переменные
+
+@import 'mixins';
 @import 'variables';
+@import 'container';
+
+
 //сборс стилей
 @import 'reset';
 //подключаем шрифты (локально)
 @import 'fonts';
-@import 'container';
+
 @import 'elements';
 @import 'typography';
 

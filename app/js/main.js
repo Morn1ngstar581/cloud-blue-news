@@ -1,3 +1,17 @@
+// Make fixed header if we scroll page
+window.onscroll = () => {
+  const header = document.querySelector('.header__top');
+  const Y = window.scrollY;
+
+  if (Y > 200) {
+    header.classList.add('header__top--fixed');
+  } else if (Y < 10){
+    header.classList.remove('header__top--fixed');
+  }
+
+}
+
+
 //Open popup with search-form
 
 import {Autoplay, EffectFade, Swiper} from "swiper";
@@ -25,7 +39,7 @@ new Swiper('.swiper', {
   effect: 'fade',
   modules: [Autoplay, EffectFade],
   autoplay: {
-    delay: 5000,
+    delay: 2000,
     waitForTransition: true,
   },
 })
@@ -54,5 +68,19 @@ function theme() {
     storage.removeItem('theme');
   }
 }
+
 storageInit();
 theme();
+
+// Hide/Show comments
+const changeArrow = document.querySelector('comments__hide');
+const showComments = document.querySelector('comments__row');
+
+// changeArrow.forEach(function (el) {
+//   el.addEventListener('click', commentActive)
+// });
+
+function commentActive(el) {
+  let btn = el.currentTarget;
+  let dTarget = btn.dataset.targ
+}

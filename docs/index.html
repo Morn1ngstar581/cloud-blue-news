@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/main.css?t=1659697814109">
+  <link rel="stylesheet" href="css/main.css?t=1671143774454">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.3.2/swiper-bundle.min.css">
 </head>
 <body>
@@ -14,36 +14,45 @@
     <div class="container">
       <div class="header__nav">
         <nav class="navbar">
-          <ul class="navbar__menu">
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Society</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Economy</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Politics</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Tech</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">World</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Auto</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Sport</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Tourism</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">Special</a>
-            </li>
+          <div class="header__nav-toggle" id="menuToggle">
 
-          </ul>
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+
+
+            <ul class="navbar__menu" id="menu">
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Society</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Economy</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Politics</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Tech</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">World</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Auto</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Sport</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Tourism</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#">Special</a>
+              </li>
+
+            </ul>
+          </div>
         </nav>
         <div class="header__search">
           <button data-target="search" class="search" type="button" aria-label="search-button">
@@ -57,6 +66,7 @@
         </div>
       </div>
     </div>
+
   </div>
   <div class="header__middle">
     <div class="container">
@@ -367,13 +377,14 @@
   <div class="container">
     <article class="extra__post">
       <a class="extra__link" href="">
-        <span class="cat-name">Special</span>
         <img alt="" class="extra__img" src="img/biggest-post.jpg">
-        <h2 class="h2 extra__title">
-          Подьем вверх
-        </h2>
-        <span class="extra__description">Экслюзивный репортаж о восхождении на "Язык Тролля".</span>
-        <span class="views">
+        <div class="extra__meta">
+          <span class="cat-name">Special</span>
+          <h2 class="h2 extra__title">
+            Подьем вверх
+          </h2>
+          <span class="extra__description">Экслюзивный репортаж о восхождении на "Язык Тролля".</span>
+          <span class="views">
             <svg class="eye" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <path
   d="M3.11799 12.467C2.96099 12.176 2.96099 11.823 3.11799 11.532C5.00999 8.033 8.50499 5 12 5C15.495 5 18.99 8.033 20.882 11.533C21.039 11.824 21.039 12.177 20.882 12.468C18.99 15.967 15.495 19 12 19C8.50499 19 5.00999 15.967 3.11799 12.467V12.467Z"
@@ -384,6 +395,7 @@
 </svg>
                  666
           </span>
+        </div>
       </a>
     </article>
   </div>
@@ -1122,7 +1134,7 @@
      </div>
    </div>
 </footer>
-<script src="js/main.js?t=1659697814109"></script>
+<script src="js/main.js?t=1671143774454"></script>
 </body>
 
 </html>

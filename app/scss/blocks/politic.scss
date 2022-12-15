@@ -13,12 +13,14 @@
       display: block;
       position: relative;
       border-radius: 16px;
+      height: 100%;
     }
 
     &__link {
       display: block;
       text-decoration: none;
       color: var(--text-color);
+      height: 100%;
     }
     &__link:hover{
       img{
@@ -37,6 +39,8 @@
     &__big-img {
       border-radius: 16px;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .cat-name {

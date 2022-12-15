@@ -20,6 +20,7 @@
   --text:#ffffff;
   --main-shuttle:#343434;
   --tags-color:#212121;
+
 }
 $c-light-bg: #F1F1F1;
 $c-white-bg: #FFFFFF;
@@ -36,6 +37,17 @@ $noto-sans: 'NotoSans', Arial, Helvetica, sans-serif;
 $open-sans: 'OpenSans', Arial, Helvetica, sans-serif;
 $lora: 'Lora', Arial, Helvetica, sans-serif;
 
-$container-width: 1124px;
+$container-width-xxl: 1400px;
+$container-width-xl: 1200px;
+$container-width-lg: 992px;
+$container-width-md: 768px;
+$container-width-sm: 576px;
+$container-width-xs: 100%;
 $container-gutters: 20px;
 $section-gutters-y: 24px 0;
+$xxl:1440px;
+$xl:1320px;
+$lg:1140px;
+$md:960px;
+$sm:720px;
+$xs:540px
